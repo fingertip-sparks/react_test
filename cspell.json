@@ -1,0 +1,9 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "files": ["src/**/*.{ts,tsx,css,scss,md}"],
+  "ignorePaths": ["node_modules", "dist", "*.lock", "package.json", "package-lock.json"],
+  "dictionaries": ["typescript", "node", "react", "css", "html", "misc"],
+  "words": ["markuplint", "stylelint", "vite", "vitejs", "tseslint", "hookform", "WCAG", "aria", "focusable", "autofocus", "readonly", "combobox", "listbox", "tabbable"],
+  "flagWords": []
+}

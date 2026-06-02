@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: '*.{ts,tsx}'
+      run: npx eslint {staged_files}
+    stylelint:
+      glob: '*.{css,scss}'
+      run: npx stylelint --allow-empty-input {staged_files}
+    markuplint:
+      glob: '*.{tsx,jsx,html}'
+      run: npx markuplint {staged_files}
+    cspell:
+      glob: '*.{ts,tsx,css,scss,md}'
+      run: npx cspell {staged_files}
+    prettier:
+      glob: '*.{ts,tsx,css,scss,md}'
+      run: npx prettier --check {staged_files}

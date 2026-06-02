@@ -1,0 +1,52 @@
+{
+  "name": "accessible-components",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "run-p lint:eslint lint:stylelint lint:markuplint lint:cspell",
+    "lint:eslint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:stylelint": "stylelint \"src/**/*.{css,scss}\" --allow-empty-input",
+    "lint:markuplint": "markuplint \"src/**/*.{tsx,jsx,html}\"",
+    "lint:cspell": "cspell \"src/**/*.{ts,tsx,css,scss,md}\"",
+    "lint:fix": "run-p lint:eslint:fix lint:stylelint:fix",
+    "lint:eslint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "lint:stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --allow-empty-input --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,scss,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css,scss,md}\""
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@markuplint/jsx-parser": "^4.18.3",
+    "@markuplint/react-spec": "^4.18.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.5.0",
+    "cspell": "^9.8.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "lefthook": "^2.1.9",
+    "markuplint": "^4.18.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-sort-media-queries": "^6.6.1",
+    "prettier": "^3.8.3",
+    "stylelint": "^17.12.0",
+    "stylelint-config-standard": "^40.0.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vite": "^7.3.1"
+  }
+}
